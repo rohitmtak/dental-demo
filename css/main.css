@@ -1,0 +1,1615 @@
+@import url('navbar.css');
+@import url('footer.css');
+
+
+/* Inline custom styles for demonstration; move to custom.css if preferred */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Custom changes */
+.col-lg-6-narrow {
+    width: 40%;
+}
+
+.accordion-item {
+    border-left: none;
+    border-right: none;
+}
+
+.item {
+    height: 18.75rem;
+    width: 18.75rem;
+    padding: 25px !important;
+    box-sizing: border-box;
+    text-align: left;
+    background-color: #eff1ff !important;
+    position: relative;
+}
+
+.item > a {
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    font-size: 1.5rem;
+}
+
+.item img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+}
+
+.cosmetic-dentistry-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #4a3280;
+    margin-bottom: 2rem;
+    padding-left: 20px;
+    letter-spacing: -0.125rem;
+}
+
+.cosmetic-dentistry-item-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #4a3280;
+}
+
+.cosmetic-dentistry-item-text {
+    font-size: 1rem;
+    color: #555555;
+    line-height: 1.7;
+    font-weight: 400;
+    width: 95%;
+}
+
+
+.ask-doctor-section a {
+    color: #4a3280;
+    border-radius: 1.5rem !important;
+    padding: 0.5rem 1.125rem !important;
+}
+
+.btn-outline-secondary {
+    border-color: #4a3280;
+    color: #4a3280;
+    padding: 0.5rem 1.25rem;
+}
+
+.btn-outline-secondary:hover {
+    border-color: #80e9b8;
+    color: #4a3280;
+    background-color: #80e9b8;
+}
+
+.img-fluid {
+    border-radius: 40px;
+}
+
+.btn-light {
+    background-color: #80e9b8;
+    color: #4a3280;
+    border-radius: 1.5rem;
+    width: 4rem !important;
+    padding: 0.2rem;
+}
+
+.btn-light:hover {
+    background-color: #fff;
+    color: #4a3280;
+    border-color: #4a3280;
+}
+
+.why-patient-trust-list {
+    border: 1px solid #4a3280 !important;
+    border-radius: 20px !important;
+    padding: 20px !important;
+    background-color: #4a3280 !important;
+    color: #fff !important;
+    background-size: cover !important;
+    background-position: 50% 80%;
+}
+
+.list-description {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.list-number {
+    font-weight: 600;
+}
+
+/* Hover effects */
+.why-patient-trust-list:hover {
+    background-color: #f2f2f2 !important;
+    background-image: none !important;
+}
+
+.why-patient-trust-list:hover .list-number {
+    color: #80e9b8 !important;
+}
+
+.why-patient-trust-list:hover h5 {
+    color: #4a3280;
+}
+
+.why-patient-trust-list:hover .list-description {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    color: #555
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.your-invisalign-provider-title {
+    font-size: 3rem;
+    color: #4a3280;
+    font-weight: 700;
+    letter-spacing: -0.125rem;
+}
+
+.your-invisalign-provider h5 {
+    font-size: 1.5rem;
+    color: #4a3280;
+    font-weight: 700;
+}
+
+.your-invisalign-provider-subtitle {
+    color: #555;
+    font-size: 1.125rem;
+}
+
+.your-invisalign-provider li {
+    background-color: #eff1ff;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    color: #4a3280;
+    font-weight: 700;
+}
+
+.your-invisalign-provider li span {
+    color: #4a3280;
+    font-size: 1rem;
+}
+
+.your-invisalign-provider .badge {
+    background-color: #80e9b8 !important;
+}
+
+.your-invisalign-provider-img {
+    max-width: 500px;
+    width: auto;
+    min-height: 500px;
+    border-radius: 1.5rem !important;
+    object-fit: cover !important;
+    margin: auto;
+}
+
+.your-invisalign-provider a {
+    background-color: #80e9b8;
+    color: #4a3280;
+    border-radius: 1.5rem !important;
+    padding: 0.5 1.5rem;
+}
+
+.what-our-customers-say-section {
+    background-color: #eff1ff;
+    padding: 80px 0;
+}
+
+.what-our-customers-say-title h2 {
+    color: #4a3280;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    letter-spacing: -0.125rem;
+}
+
+.what-our-customers-say-title p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.reviews-carousel-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+}
+
+.reviews-wrapper {
+    overflow: hidden;
+    margin: 0 -15px;
+}
+
+#customerReviews {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.review-item {
+    flex: 0 0 400px;
+    width: 400px;
+    margin: 15px;
+    padding: 30px;
+    background-color: #fff;
+    color: #4a3280 !important;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 350px;
+}
+
+.review-stars {
+    color: #4a3280;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.review-title {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin: 20px 0;
+    text-align: left;
+    font-style: italic;
+    flex-grow: 1;
+}
+
+.reviewer-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.reviewer-name {
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin-top: auto;
+}
+
+/* Get in Touch Section Styles */
+.get-in-touch-section {
+    background-color: #fff;
+}
+
+.get-in-touch-section .section-title {
+    color: #4a3280;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: -0.125rem;
+}
+
+.get-in-touch-section .section-subtitle {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+.contact-item {
+    transition: all 0.3s ease;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #4a3280;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icon i {
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+.contact-info h5 {
+    color: #4a3280;
+    font-weight: 600;
+}
+
+.contact-form-wrapper {
+    background-color: #eff1ff;
+    padding: 3.5rem 5rem;
+    border-radius: 20px;
+}
+
+.contact-form .form-control,
+.contact-form .form-select {
+    border: none;
+    border-bottom: 1px solid lightslategray;
+    background-color: transparent;
+    padding: 0.8rem 1rem;
+    border-radius: 0;
+    margin-bottom: 1rem;
+}
+
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+    box-shadow: none;
+}
+
+.contact-form textarea.form-control {
+    resize: none;
+}
+
+.contact-form .btn-brand {
+    background-color: #80e9b8;
+    color: #4a3280;
+    padding: 0.8rem 2rem;
+    border-radius: 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.contact-form .btn-brand:hover {
+    background-color: #4a3280;
+    color: #fff;
+}
+
+.form-label {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #4a3280;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .contact-info {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .get-in-touch-section .section-title {
+        font-size: 2rem;
+    }
+
+    .contact-form-wrapper {
+        padding: 1.5rem;
+    }
+}
+
+/* Explore Our Dental Blog Section Styles */
+.explore-blog-section {
+    background-color: #eff1ff;
+    padding: 5rem 0;
+  }
+  
+  .explore-blog-section .section-title {
+    color: #4a3280;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: -0.125rem;
+  }
+  
+  .explore-blog-section .section-subtitle {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+  }
+  
+  .blog-card {
+    background-color: #4a3280;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 100%;
+    border: 1px solid #4a3280;
+    transition: transform 0.3s ease;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .blog-card-img-wrapper {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    padding: 1.5rem;
+  }
+  
+  .blog-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 1.25rem;
+  }
+  
+  .blog-card:hover .blog-card-img {
+    transform: scale(1.05);
+  }
+  
+  .blog-card-content {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+  }
+  
+  .blog-card-title {
+    color: #fff;
+    font-size: 1.375rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+  
+  .blog-card-text {
+    color: #f5f5f5;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn-read-more {
+    background-color: #80e9b8;
+    color: #4a3280;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .btn-read-more:hover {
+    background-color: #4a3280;
+    color: #fff;
+    border-color: #fff;
+  }
+  
+  .btn-read-more i {
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 991px) {
+    .blog-card {
+      margin-bottom: 2rem;
+    }
+    
+    .explore-blog-section .section-title {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .explore-blog-section {
+      padding: 3rem 0;
+    }
+    
+    .blog-card-img-wrapper {
+      height: 200px;
+    }
+    
+    .blog-card-title {
+      font-size: 1.1rem;
+    }
+  }
+
+  .hero-section .container {
+    max-width: 1200px;
+  }
+
+.navbar {
+    padding: 1rem 0;
+}
+
+.navbar .container {
+    max-width: 1200px;
+}
+
+.navbar-brand {
+    color: #4a3280 !important;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.navbar-nav {
+    gap: 2rem;
+}
+
+.nav-link {
+    color: #4a3280 !important;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #80e9b8 !important;
+}
+
+.nav-link.active {
+    color: #80e9b8 !important;
+}
+
+.navbar .btn-brand {
+    background-color: #80e9b8 !important;
+    color: #4a3280 !important;
+    font-weight: 500;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.navbar .btn-brand:hover {
+    background-color: #fff;
+    
+    color: #4a3280;
+    border: 1px solid #4a3280;
+}
+
+.navbar a[class*="btn-brand"] {
+    padding: 0.5rem 1.25rem;
+}
+
+.navbar .btn-brand i {
+    font-size: 0.875rem;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+    
+    .navbar .btn-brand {
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+}
+
+.choose-us-section .left-choose-us-img {
+    width: 500px;
+    height: 400px;
+    object-position: top;
+    object-fit: cover;
+}
+
+.left-choose-us-flex-inner-left .left-choose-us-img {
+    border-radius: 1rem 1rem 0 0 !important;
+}
+
+.left-choose-us-flex-inner-right .left-choose-us-img {
+    border-radius: 0 0 1rem 1rem !important;
+}
+
+
+.choose-us-section .right-choose-us-bottom {
+    max-height: 250px;
+}
+
+.left-choose-us-section, .right-choose-us-section {
+    width: 48%;
+}
+
+.left-choose-us-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-choose-us-flex-inner-left {
+    margin-top: auto;
+    margin-bottom: 60%;
+}
+
+.left-choose-us-flex-inner-right {
+    margin-top: auto;
+    margin-bottom: 10%;
+}
+
+.left-choose-us-flex-inner-left > div {
+    bottom: -10%;
+    left: 0;
+    background-color: #eff1ff;
+    color: #4a3280;
+    padding: .5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.left-choose-us-flex-inner-right > div {
+    top: -10%;
+    right: 0;
+    background-color: #eff1ff;
+    color: #4a3280;
+    padding: .5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.choose-us-section a {
+    border-radius: 1.5rem;
+    padding: 0.5rem 1.5rem;
+}
+
+.cosmetic-dentistry-title span {
+    position: relative;
+    display: inline-block;
+}
+
+.cosmetic-dentistry-title span::after {
+    content: "";
+    position: absolute;
+    left: -5px;
+    bottom: 10%;
+    width: calc(100% + 1rem);
+    height: 1.125rem;
+    background-color: #80e9b8;
+    z-index: -1;
+    transform: skew(-12deg);
+}
+/* Custom changes end */
+
+body {
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    color: #2F3A2C;
+}
+
+.btn-brand {
+    background-color: #80e9b8;
+    padding: 0.5rem 1.25rem;
+    color: #4a3280;
+}
+
+.btn-brand:hover {
+    background-color: #fff;
+    
+    color: #4a3280;
+    border: 1px solid #4a3280;
+}
+
+/***********************************************************
+ * Hero SECTION
+ ***********************************************************/
+
+/* Hero Section Styling */
+.hero-section {
+    padding-top: 3rem 0;
+    min-height: 85vh;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #4a3280;
+    max-width: 450px;
+    letter-spacing: -0.125rem;
+    position: relative;
+}
+
+.hero-title::before {
+    content: "";
+    position: absolute;
+    top: 16%;
+    right: 110%;
+    width: 45%;
+    height: 2px;
+    background-color: #4a3280;
+    z-index: -1;
+}
+
+.hero-title span {
+    position: relative;
+    display: inline-block;
+}
+
+.hero-title span::after {
+    content: "";
+    position: absolute;
+    left: -5px;
+    bottom: 10%;
+    width: calc(100% + 1rem);
+    height: 1.125rem;
+    background-color: #80e9b8;
+    z-index: -1;
+    transform: skew(-12deg);
+}
+
+.hero-subtitle {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 1.75rem;
+    color: #4a3280;
+    max-width: 450px;
+}
+
+.hero-image {
+    width: 100%;
+    border-radius: 1.5rem;
+    /* height: 10%; */
+    object-fit: cover;
+}
+
+.hero-icon {
+    position: absolute;
+    top: 38%;
+    left: -35px;
+    /* box-shadow: 0 4px 20px -20px rgba(0, 0, 0, 0.1); */
+    border-radius: 50%;
+}
+
+.hero-list-item {
+    font-size: 1.125rem;
+}
+
+.hero-list-item i {
+    font-size: 1.375rem;
+    /* display: inline-block;
+    margin: auto 0.5rem; */
+    vertical-align: middle;
+}
+
+/***********************************************************
+ * Services
+ ***********************************************************/
+
+/* Target the entire carousel section by ID */
+#services-carousel-section {
+    font-family: "Open Sans", sans-serif;
+    /* Body text font */
+}
+
+/* Section Title (h2) */
+#services-carousel-section .carousel-services-title {
+    font-family: "Playfair Display", serif;
+    /* Heading font */
+    font-size: 2rem;
+    font-weight: 700;
+    color: #121212;
+}
+
+/* Individual Slide Headings (h3) */
+#services-carousel-section .carousel-services-heading {
+    font-family: "Playfair Display", serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #121212;
+    margin-bottom: 0.75rem;
+}
+
+/* Paragraph Text */
+#services-carousel-section .carousel-services-text {
+    color: #121212;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* "Learn More" Link */
+#services-carousel-section .carousel-services-link {
+    color: #ffb142;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#services-carousel-section .carousel-services-link:hover {
+    text-decoration: underline;
+}
+
+/* Arrow Span */
+#services-carousel-section .carousel-services-arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    margin-left: 0.5rem;
+    background-color: #ffb142;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+#services-carousel-section .carousel-services-arrow:hover {
+    background-color: #996d30;
+}
+
+/* You can add more rules here if needed for additional slides or styling */
+
+
+
+/***********************************************************
+ * WHY CHOOSE US SECTION
+ ***********************************************************/
+
+/* Overall Section Wrapper */
+.choose-us-section {
+    /* If you need a specific background or additional styles,
+       add them here. For now, it inherits your site's default. */
+    position: relative;
+}
+
+/* Image in Left Column */
+.choose-us-image {
+    max-width: 68%;
+    /* border-radius: 0.5rem; */
+    /* Adjust if you want a different corner radius */
+}
+
+/* Section Title */
+.choose-us-title {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: 3rem;
+    /* Adjust for exact design match */
+    font-weight: 700;
+    color: #f5f5f5;
+    /* Inherits your site's main text color */
+}
+
+/* Subtitle / Intro Paragraph */
+.choose-us-subtitle {
+    /* font-family: 'Poppins', sans-serif; */
+    font-size: 1rem;
+    /* line-height: 1.6; */
+    color: #f5f5f5;
+    /* Adjust color, margin, etc. as needed */
+    width: 90%;
+}
+
+/* List of Bullet Points */
+.choose-us-list {
+    margin: 0;
+    padding: 0;
+}
+
+/* Each Bullet Point Container */
+.choose-us-item {
+    align-items: flex-start;
+    /* Ensure icon + text align top */
+}
+
+/* Icon Container */
+.choose-us-icon img {
+    width: 48px;
+    /* Adjust icon size to match your design */
+    height: 48px;
+    /* Or remove if you prefer auto-scaling */
+}
+
+/* Bullet Point Title */
+.choose-us-item-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25rem;
+    /* Slightly larger than body text */
+    font-weight: 600;
+    color: #78aac3;
+}
+
+/* Bullet Point Text */
+.choose-us-item-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+
+/***********************************************************
+ * COSMETIC DENTISTRY SECTION
+ ***********************************************************/
+
+/* Images in the Top Row */
+.cd-image {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    /* Adjust corner radius if needed */
+}
+
+/* Section Title */
+.cd-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    /* Adjust for exact size and spacing from your reference */
+}
+
+/* Section Subtitle */
+.cd-subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #fff;
+    max-width: 600px;
+    /* Limit width for better readability */
+}
+
+/* Tag-Style Buttons for Services */
+.cd-tag-button {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+    font-family: 'Open Sans', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.cd-tag-button:hover {
+    background-color: #fff;
+    color: #2F3A2C;
+}
+
+/* Primary CTA Button */
+.cd-cta-button {
+    background-color: #ffb142;
+    /* Adjust to match your brand color */
+    color: #fff;
+    border-radius: 2rem;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0.5rem 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.cd-cta-button:hover {
+    background-color: #996d30;
+    /* Hover color if desired */
+    color: #fff;
+}
+
+/* "Or Contact Us" Link */
+.cd-contact-link {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.cd-contact-link:hover {
+    text-decoration: underline;
+}
+
+
+
+/***********************************************************
+ * ASK THE DOCTOR SECTION
+ ***********************************************************/
+
+/* Section Wrapper */
+.ask-doctor-section {
+    /* Adjust background color, if needed */
+}
+
+/* Title & Subtitle */
+.ask-doctor-title {
+    /* or your heading font */
+    font-size: 3rem;
+    /* Adjust to match your design */
+    font-weight: 700;
+    color: #4a3280;
+}
+
+.ask-doctor-subtitle {
+    /* font-family: 'Open Sans', sans-serif; */
+    /* or your body font */
+    font-size: 1.125rem;
+    /* line-height: 1.6; */
+    color: #555;
+    max-width: 380px;
+    /* optional, for better readability */
+}
+
+/* Accordion Overrides (optional, if you want custom styling) */
+.accordion-button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #657172;
+    font-size: 1.25rem;
+    /* background-color: #f9f9f9; */
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-body {
+    font-size: 1.125rem;
+    color: #555;
+    width: 90%;
+}
+
+/* Right Column - Image Container */
+.ask-doctor-image-container {
+    max-width: 400px;
+    /* or adjust as needed */
+    /* margin: 0 auto; */
+    /* center horizontally */
+}
+
+.ask-doctor-image-container img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    /* object-position: left; */
+    /* display: block; */
+    /* margin-bottom: 1rem; */
+}
+
+
+/* Main Image */
+.ask-doctor-main-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/* Chat Bubbles */
+.ask-doctor-bubble {
+    position: absolute;
+    background-color: #fff;
+    color: #333;
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 220px;
+}
+
+/* Positioning of Chat Bubbles */
+.bubble-top {
+    top: 0;
+    right: -30%;
+    transform: translateY(-20%);
+}
+
+.bubble-bottom {
+    bottom: 0;
+    left: -25%;
+    transform: translateY(20%);
+}
+
+/* Doctor Badge */
+.ask-doctor-badge {
+    position: absolute;
+    bottom: 60px;
+    /* adjust to place above the CTA button */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Doctor Badge Image */
+.ask-doctor-badge-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* CTA Button */
+.ask-doctor-cta-btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color: #ffb142;
+    /* brand color */
+    color: #fff;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.ask-doctor-cta-btn:hover {
+    background-color: #996d30;
+    /* hover color */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .ask-doctor-image-container {
+        max-width: 300px;
+    }
+
+    .bubble-top {
+        right: -20%;
+    }
+
+    .bubble-bottom {
+        left: -15%;
+    }
+}
+
+
+/***********************************************************
+ * MEET OUR TEAM SECTION
+ ***********************************************************/
+
+/* Section Wrapper */
+.team-section {
+    /* If your design has a specific background color or image, add it here. */
+}
+
+/* Section Title */
+.team-title {
+    font-family: 'Playfair Display', serif;
+    /* or your heading font */
+    font-size: 2rem;
+    /* adjust to match your reference */
+    color: #121212;
+}
+
+/* Subtitle under Title */
+.team-subtitle {
+    font-family: 'Open Sans', sans-serif;
+    /* or your body font */
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+/* Team Card */
+.team-card {
+    border: none;
+    /* remove default card border if your design doesn't need it */
+    /* background-color: #fff; */
+    /* or match your site's background color */
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); */
+    /* subtle shadow if desired */
+}
+
+/* Image Container */
+.team-card-img {
+    width: 50%;
+    background-color: #f5f5f5;
+    /* placeholder bg if no image */
+    text-align: center;
+    padding: 1rem;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Card Title & Subtitle */
+.card-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #121212;
+    text-align: center;
+}
+
+.card-subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    color: #888;
+    text-align: center;
+}
+
+/* Card Text */
+.card-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    color: #444;
+    text-align: center;
+}
+
+/* Social Icons Container */
+.team-card-icons a {
+    font-size: 1.25rem;
+    /* adjust icon size */
+    color: #444;
+    transition: color 0.2s ease;
+}
+
+.team-card-icons a:hover {
+    color: #121212;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+    .team-title {
+        font-size: 1.5rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-subtitle {
+        font-size: 0.85rem;
+    }
+
+    .card-text {
+        font-size: 0.85rem;
+    }
+}
+
+
+
+
+/***********************************************************
+ * TESTIMONIALS SECTION
+ ***********************************************************/
+
+/* Overall Section Wrapper */
+.testimonials-section {
+    background-color: #f8efe6;
+    /* A soft beige tone, adjust as needed */
+}
+
+/* Title & Subtitle */
+.ts-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #5e4033;
+    /* Darker text color for contrast */
+}
+
+.ts-subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.125rem;
+    color: #8a6e5a;
+    /* Slightly lighter shade */
+}
+
+/* Category Navigation */
+.ts-categories .nav-link {
+    font-family: 'Open Sans', sans-serif;
+    color: #8a6e5a;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.ts-categories .nav-link:hover {
+    color: #5e4033;
+}
+
+.ts-categories .nav-link.active {
+    color: #5e4033;
+    border-bottom: 2px solid #5e4033;
+    border-radius: 0;
+}
+
+/* Quote Block */
+.ts-quote {
+    max-width: 700px;
+    /* Limit width for readability */
+}
+
+.ts-quote-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: #5e4033;
+    line-height: 1.6;
+    margin-bottom: 0;
+    /* override default if needed */
+    font-style: italic;
+    /* optional if you want italic quotes */
+}
+
+/* Author & Logo */
+.ts-quote-author {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ts-yelp-logo {
+    width: 40px;
+    /* Adjust as needed */
+    height: auto;
+}
+
+/* Arrow Buttons */
+.ts-arrow-btn {
+    background-color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    color: #5e4033;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.ts-arrow-btn:hover {
+    background-color: #f2e6d9;
+}
+
+.ts-arrow-btn:focus {
+    outline: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+    .ts-title {
+        font-size: 1.5rem;
+    }
+
+    .ts-subtitle {
+        font-size: 1rem;
+    }
+
+    .ts-quote-text {
+        font-size: 0.95rem;
+    }
+
+    .ts-yelp-logo {
+        width: 32px;
+    }
+
+    .ts-arrow-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+    }
+}
+
+
+/***********************************************************
+ * APPOINTMENT SECTION
+ ***********************************************************/
+
+/* Section Wrapper */
+.appointment-section {
+    background-color: #666;
+    /* Adjust to match your design's dark gray */
+}
+
+/* Title */
+.appointment-title {
+    font-family: 'Playfair Display', serif;
+    /* or your heading font */
+    font-size: 2rem;
+    /* Adjust to match your design */
+    font-weight: 700;
+}
+
+/* Subtitle */
+.appointment-subtitle {
+    font-family: 'Open Sans', sans-serif;
+    /* or your body font */
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Image Placeholder */
+.appointment-image-placeholder {
+    width: 100%;
+    height: 200px;
+    background-color: #888;
+    /* Lighter gray placeholder */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    /* If you want an icon or text inside, you could add content here. */
+}
+
+/* Buttons */
+.appointment-btn-book,
+.appointment-btn-inquire {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* "Book" Button - White with Dark Text */
+.appointment-btn-book {
+    background-color: #fff;
+    color: #333;
+}
+
+.appointment-btn-book:hover {
+    background-color: #e6e6e6;
+}
+
+/* "Inquire" Button - White with Dark Text (or adjust if you want a different style) */
+.appointment-btn-inquire {
+    background-color: #fff;
+    color: #333;
+}
+
+.appointment-btn-inquire:hover {
+    background-color: #e6e6e6;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+    .appointment-title {
+        font-size: 1.5rem;
+    }
+
+    .appointment-image-placeholder {
+        height: 150px;
+    }
+}
+
+
+/***********************************************************
+ * Whatsapp logo
+ ***********************************************************/
+
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+    width: 60px;
+    height: 60px;
+}
+
+.whatsapp-icon {
+    width: 140%;
+    height: auto;
+    margin-top: 10%;
+}
+
+
+/***********************************************************
+ * FOOTER SECTION
+ ***********************************************************/
+
+ .footer-section {
+    background-color: #4a3280;
+    padding: 40px 0 20px;
+    color: #fff;
+  }
+  
+  .footer-heading {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #fff;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links li a,
+  .footer-links li {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links li a:hover {
+    color: #80e9b8;
+  }
+  
+  .newsletter-form {
+    position: relative;
+    margin-top: 1.5rem;
+  }
+  
+  .newsletter-form .form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 30px;
+    padding: 12px 20px;
+    color: #fff;
+    width: 100%;
+  }
+  
+  .newsletter-form .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .newsletter-form .btn-submit {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #80e9b8;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: #4a3280;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .newsletter-form .btn-submit:hover {
+    background-color: #fff;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .footer-logo {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .footer-links-bottom {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+  
+  .footer-links-bottom a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links-bottom a:hover {
+    color: #80e9b8;
+  }
+  
+  .footer-links-bottom span {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  @media (max-width: 991px) {
+    .footer-section {
+      padding: 60px 0 30px;
+    }
+  
+    .footer-heading {
+      margin-bottom: 1.5rem;
+      margin-top: 2rem;
+    }
+  
+    .footer-bottom {
+      margin-top: 40px;
+      text-align: center;
+    }
+  
+    .footer-logo {
+      margin-bottom: 1rem;
+    }
+  
+    .footer-links-bottom {
+      justify-content: center;
+      margin-top: 1rem;
+    }
+  }

@@ -1,0 +1,19 @@
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Example custom color for buttons */
+.btn-brand {
+    background-color: #ffb142;
+    /* adjust to match your brand color */
+    color: #fff;
+}
+
+.btn-brand:hover {
+    background-color: #996d30;
+    /* hover state */
+    color: #fff;
+}
+
